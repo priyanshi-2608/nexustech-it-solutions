@@ -1,4 +1,4 @@
-# TechNova – IT Solutions & ATS Recruitment Platform
+# NexusTech – IT Solutions & ATS Recruitment Platform
 
 TechNova is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application designed for an IT solutions provider. It features a complete corporate website experience alongside a robust Admin Portal and an automated Applicant Tracking System (ATS) resume matcher.
 
@@ -25,8 +25,8 @@ Follow these instructions to run the project locally on your machine.
 - MongoDB running locally or via MongoDB Atlas
 
 ### 1. Clone the Repository
-git clone https://github.com/your-username/nexustech-it-solutions.git
-cd TechNova
+git clone https://github.com/priyanshi-2608/nexustech-it-solutions/edit/main/README.md
+cd Nexustech
 
 ### 2. Setup Backend
 cd backend
