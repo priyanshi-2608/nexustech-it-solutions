@@ -26,7 +26,7 @@ Follow these instructions to run the project locally on your machine.
 
 ### 1. Clone the Repository
 git clone https://github.com/priyanshi-2608/nexustech-it-solutions/edit/main/README.md
-cd Nexustech
+cd NexusTech
 
 ### 2. Setup Backend
 cd backend
