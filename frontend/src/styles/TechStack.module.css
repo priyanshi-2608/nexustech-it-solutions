@@ -1,0 +1,187 @@
+/* src/styles/TechSection.module.css */
+
+.techSection {
+  padding: 80px 0;
+  background: transparent; /* Makes the section background fully transparent */
+  color: var(--text-main);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.badge {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid var(--border-color);
+}
+
+.sectionHeader h2 {
+  font-size: 2.2rem;
+  margin: 15px 0 10px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.sectionHeader p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.filterTabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.tabBtn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.tabBtn:hover {
+  background: rgba(21, 31, 50, 0.9);
+  color: var(--text-main);
+  border-color: var(--primary-color);
+}
+
+.activeTab {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: #ffffff !important;
+  box-shadow: var(--shadow-md);
+}
+
+/* Marquee Layout with smooth edge fade */
+.marqueeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marqueeRow {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollLeft 35s linear infinite;
+}
+
+.reverseTrack {
+  animation: scrollRight 35s linear infinite;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-33.333% - 8px));
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(calc(-33.333% - 8px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Individual Tech Card Style with nice glassmorphism */
+.techCard {
+  background: var(--bg-card); /* Frosted semi-transparent background */
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 22px;
+  width: 320px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.techCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px -10px var(--accent-glow);
+  background: rgba(21, 31, 50, 0.9);
+}
+
+.techCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.iconWrapper {
+  width: 44px;
+  height: 44px;
+  background: var(--primary-light);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.techName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.techDesc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.loadingText, .noDataText {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 60px;
+  font-size: 1.05rem;
+}

@@ -1,0 +1,68 @@
+/* src/styles/ClientsTicker.module.css */
+
+.clientsSection {
+  background: transparent; /* Allows the background image/video to show through */
+  padding: 60px 20px 80px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.clientsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clientsTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 35px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Enhances readability over background overlay */
+}
+
+.clientsGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.clientItem {
+  /* Frosted glass card using global tokens */
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  padding: 14px 24px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.clientItem:hover {
+  background: rgba(21, 31, 50, 0.9);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px -10px var(--shadow-md);
+}
+
+.clientIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color); /* Automatically colors the Lucide vector icon with your accent */
+}
+
+.clientName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.2px;
+}

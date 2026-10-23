@@ -1,0 +1,74 @@
+/* src/styles/StatsSection.module.css */
+
+.nextSectionWrapper {
+  position: relative;
+  z-index: 5;
+  margin-top: -30px; /* Pulls it up slightly to blend with the hero section */
+  padding: 0 20px;
+}
+
+.statsSection {
+  background: transparent; /* Removed the heavy black card background */
+  border: none;
+  box-shadow: none;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 25px 20px;
+  width: 100%;
+  background: var(--bg-card); /* Light frosted glass per card */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.statItem:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+  background: rgba(21, 31, 50, 0.85);
+  box-shadow: 0 15px 35px -10px var(--shadow-md);
+}
+
+.statNumber {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -1px;
+  text-shadow: 0 2px 10px var(--accent-glow);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .statNumber {
+    font-size: 2.2rem;
+  }
+  
+  .statsGrid {
+    gap: 16px;
+  }
+}

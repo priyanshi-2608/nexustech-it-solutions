@@ -1,0 +1,90 @@
+/* ==========================================
+   THEME DESIGN TOKENS (Midnight Navy + Violet)
+   ========================================== */
+:root {
+  /* Fonts & Layout */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --radius-md: 8px;
+  --shadow-md: 0 10px 25px -5px rgba(139, 92, 246, 0.25);
+
+  /* Backgrounds & Text */
+  /* 1. Background ને થોડું lighter/subtle બનાવ્યું જેથી video clear દેખાય */
+  --bg-main: #0d1527; 
+  
+  /* 2. Cards નો dark fill ઘટાડીને ઓછો (0.45) કર્યો જેથી translucency વધે */
+  --bg-card: rgba(15, 23, 42, 0.45); 
+  
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+
+  /* Theme Accent Colors (Electric Violet) */
+  --primary-color: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --primary-light: rgba(139, 92, 246, 0.2);
+  --border-color: rgba(167, 139, 250, 0.25);
+}
+
+/* ==========================================
+   GLOBAL STYLES & RESET
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container for centering content across pages */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Reusable Button Classes */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: var(--shadow-md);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--text-main);
+  padding: 12px 28px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--border-color);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}

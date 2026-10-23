@@ -1,0 +1,93 @@
+/* src/styles/AdminContacts.module.css */
+
+.adminContainer {
+  padding: 40px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #0f172a;
+}
+
+.headerBox {
+  margin-bottom: 30px;
+}
+
+.headerBox h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.headerBox p {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.statusText, .errorText {
+  text-align: center;
+  font-size: 1rem;
+  padding: 40px;
+  color: #64748b;
+}
+
+.errorText {
+  color: #dc2626;
+}
+
+.tableWrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+}
+
+.contactTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.contactTable th {
+  background: #f8fafc;
+  color: #334155;
+  font-weight: 700;
+  padding: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.contactTable td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  vertical-align: top;
+}
+
+.contactTable tr:last-child td {
+  border-bottom: none;
+}
+
+.contactTable tr:hover {
+  background: #fdfdfd;
+}
+
+.messageCell {
+  max-width: 300px;
+  word-break: break-word;
+}
+
+.deleteBtn {
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.deleteBtn:hover {
+  background-color: #fecaca;
+}
