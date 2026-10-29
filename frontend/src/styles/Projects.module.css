@@ -1,5 +1,3 @@
-/* src/styles/Projects.module.css */
-
 .projectsSection {
   padding: 0 20px 80px 20px;
   background-color: var(--bg-main);
@@ -7,7 +5,6 @@
   min-height: 100vh;
 }
 
-/* Hero Banner stretching fully to the top and edges */
 .heroBanner {
   position: relative;
   width: 100%;

@@ -23,7 +23,6 @@ const ClientReviewPage = () => {
     setError('');
 
     try {
-      // In ClientReviewPage.jsx
       const response = await fetch('http://localhost:5000/api/testimonials/submit', {
         method: 'POST',
         headers: {
@@ -32,7 +31,6 @@ const ClientReviewPage = () => {
         body: JSON.stringify(formData),
       });
 
-      // Check if response is not JSON (like a 404 HTML page)
       const contentType = response.headers.get('content-type');
       let data = {};
       if (contentType && contentType.includes('application/json')) {

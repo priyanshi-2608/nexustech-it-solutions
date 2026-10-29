@@ -1,7 +1,5 @@
-/* src/styles/Testimonials.module.css */
-
 .testimonialsSection {
-  background: transparent; /* Transparent so the background video shines through */
+  background: transparent; 
   padding: 100px 20px;
   position: relative;
   z-index: 2;
@@ -46,7 +44,6 @@
   font-size: 1rem;
 }
 
-/* Carousel Container */
 .carouselWrapper {
   position: relative;
   display: flex;
@@ -85,7 +82,7 @@
 }
 
 .stars {
-  color: #fbbf24; /* Golden yellow for rating stars */
+  color: #fbbf24; 
   font-size: 1.1rem;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -135,7 +132,6 @@
   color: var(--text-muted, #94a3b8);
 }
 
-/* Navigation Arrow Buttons */
 .navBtn {
   position: absolute;
   top: 50%;
@@ -170,7 +166,6 @@
   right: -22px;
 }
 
-/* Pagination Dots */
 .paginationDots {
   display: flex;
   justify-content: center;
@@ -200,7 +195,6 @@
   box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
 }
 
-/* Responsive Media Queries */
 @media (max-width: 992px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);

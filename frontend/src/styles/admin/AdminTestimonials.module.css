@@ -1,22 +1,20 @@
-/* src/styles/AdminTestimonials.module.css */
-
 .adminContainer {
   padding: 30px;
   max-width: 1300px;
   margin: 0 auto;
-  color: var(--text-main, #0f172a); /* Default to dark text for light admin backgrounds */
+  color: var(--text-main, #0f172a);
 }
 
 .adminContainer h2 {
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 6px;
-  color: #0f172a; /* Explicit dark color for high contrast */
+  color: #0f172a; 
   letter-spacing: -0.5px;
 }
 
 .subtitle {
-  color: #64748b; /* Muted slate gray for clear readability */
+  color: #64748b; 
   font-size: 0.95rem;
   margin-bottom: 24px;
 }

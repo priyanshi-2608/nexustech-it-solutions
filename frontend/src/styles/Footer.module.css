@@ -1,13 +1,11 @@
-/* src/styles/Footer.module.css */
-
 .footer {
-  background: var(--bg-card); /* Frosted semi-transparent background using global card token */
+  background: var(--bg-card);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid var(--border-color);
   padding: 80px 20px 30px 20px;
   position: relative;
-  z-index: 10; /* Ensures it sits cleanly on top of the fixed background video */
+  z-index: 10; 
   color: var(--text-muted);
 }
 

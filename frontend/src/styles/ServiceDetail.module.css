@@ -1,5 +1,3 @@
-/* src/styles/ServiceDetail.module.css */
-
 .detailPage {
   min-height: 100vh;
   padding-bottom: 100px;
@@ -73,6 +71,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
+  align-items: start;
 }
 
 .mainContent {
@@ -130,6 +129,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: sticky;
+  top: 100px;
 }
 
 .ctaCard {

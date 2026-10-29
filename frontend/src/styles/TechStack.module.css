@@ -1,8 +1,6 @@
-/* src/styles/TechSection.module.css */
-
 .techSection {
   padding: 80px 0;
-  background: transparent; /* Makes the section background fully transparent */
+  background: transparent; 
   color: var(--text-main);
   overflow: hidden;
 }
@@ -71,7 +69,6 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Marquee Layout with smooth edge fade */
 .marqueeContainer {
   display: flex;
   flex-direction: column;
@@ -121,9 +118,8 @@
   }
 }
 
-/* Individual Tech Card Style with nice glassmorphism */
 .techCard {
-  background: var(--bg-card); /* Frosted semi-transparent background */
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 14px;
   padding: 22px;

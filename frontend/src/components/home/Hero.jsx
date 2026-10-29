@@ -1,4 +1,3 @@
-// src/components/home/Hero.jsx
 import React, { useEffect, useRef } from 'react';
 import { Rocket, ArrowRight, Layers } from 'lucide-react';
 import styles from '../../styles/Hero.module.css';
@@ -11,12 +10,10 @@ const Hero = () => {
     if (!video) return;
 
     const handleScroll = () => {
-      // When the user scrolls back to the top of the page
       if (window.scrollY <= 10) {
-        // If the video has finished playing or is paused, restart it once
         if (video.paused) {
           video.currentTime = 0;
-          video.play().catch(() => {}); // Catch prevents autoplay restriction errors
+          video.play().catch(() => {}); 
         }
       }
     };

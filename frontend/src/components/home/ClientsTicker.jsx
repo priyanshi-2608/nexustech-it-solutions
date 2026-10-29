@@ -1,4 +1,3 @@
-// src/components/home/ClientsTicker.jsx
 import React from 'react';
 import { Building2, Globe, Zap, Shield, Cloud } from 'lucide-react';
 import styles from '../../styles/ClientsTicker.module.css';

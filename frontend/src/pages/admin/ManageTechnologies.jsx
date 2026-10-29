@@ -66,7 +66,6 @@ const ManageTechnologies = () => {
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this technology?')) return;
     
-    // Check both potential storage keys just in case
     const token = localStorage.getItem('token') || localStorage.getItem('adminToken');
 
     if (!token) {

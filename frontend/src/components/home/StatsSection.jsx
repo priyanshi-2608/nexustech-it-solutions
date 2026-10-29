@@ -1,4 +1,3 @@
-// src/components/home/StatsSection.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import styles from '../../styles/StatsSection.module.css';
 
@@ -53,7 +52,6 @@ const Counter = ({ end, suffix }) => {
 
 const StatsSection = () => {
   return (
-    /* Added the wrapper class for the overlap/curtain effect */
     <div className={styles.nextSectionWrapper}>
       <section className={styles.statsSection}>
         <div className={`container ${styles.statsGrid}`}>

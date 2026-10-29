@@ -1,11 +1,9 @@
-/* src/styles/Blog.module.css */
 .blogPage {
   background-color: var(--bg-main);
   color: var(--text-main);
   min-height: 80vh;
 }
 
-/* Editorial Header Section */
 .editorialHeader {
   position: relative;
   background-size: cover;
@@ -56,7 +54,6 @@
   margin-bottom: 35px;
 }
 
-/* Filter Bar Pills */
 .filterBar {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +86,6 @@
   box-shadow: var(--shadow-md);
 }
 
-/* Main Content Feed */
 .feedSection {
   padding: 70px 0 100px 0;
   background-color: var(--bg-main);
@@ -108,7 +104,6 @@
   font-size: 1.5rem;
 }
 
-/* Uniform Articles Grid */
 .magazineGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -117,7 +112,6 @@
   margin: 0 auto;
 }
 
-/* Link wrapper for article cards */
 .cardLink {
   text-decoration: none;
   display: block;

@@ -1,7 +1,5 @@
-/* src/styles/ClientsTicker.module.css */
-
 .clientsSection {
-  background: transparent; /* Allows the background image/video to show through */
+  background: transparent; 
   padding: 60px 20px 80px 20px;
   position: relative;
   z-index: 2;
@@ -20,7 +18,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-bottom: 35px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Enhances readability over background overlay */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .clientsGrid {
@@ -32,7 +30,6 @@
 }
 
 .clientItem {
-  /* Frosted glass card using global tokens */
   background: var(--bg-card);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -57,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-color); /* Automatically colors the Lucide vector icon with your accent */
+  color: var(--primary-color);
 }
 
 .clientName {

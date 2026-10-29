@@ -1,14 +1,12 @@
-/* src/styles/StatsSection.module.css */
-
 .nextSectionWrapper {
   position: relative;
   z-index: 5;
-  margin-top: -30px; /* Pulls it up slightly to blend with the hero section */
+  margin-top: -30px; 
   padding: 0 20px;
 }
 
 .statsSection {
-  background: transparent; /* Removed the heavy black card background */
+  background: transparent; 
   border: none;
   box-shadow: none;
   padding: 20px 0;
@@ -31,7 +29,7 @@
   gap: 8px;
   padding: 25px 20px;
   width: 100%;
-  background: var(--bg-card); /* Light frosted glass per card */
+  background: var(--bg-card); 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);

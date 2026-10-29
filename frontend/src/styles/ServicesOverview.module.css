@@ -1,7 +1,5 @@
-/* src/styles/ServicesOverview.module.css */
-
 .servicesSection {
-  background: transparent; /* Changed to transparent so the background video shines through */
+  background: transparent;
   padding: 100px 20px;
   position: relative;
   z-index: 2;

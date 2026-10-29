@@ -22,10 +22,7 @@ const Blog = () => {
       });
   }, []);
 
-  // Extract unique categories for filter tabs
   const categories = ['All', ...new Set(blogs.map(b => b.category).filter(Boolean))];
-
-  // Filter blogs based on selected category
   const filteredBlogs = selectedCategory === 'All' 
     ? blogs 
     : blogs.filter(b => b.category === selectedCategory);
@@ -34,7 +31,6 @@ const Blog = () => {
 
   return (
     <div className={styles.blogPage}>
-      {/* Editorial Header Section */}
       <div 
         className={styles.editorialHeader} 
         style={{ backgroundImage: `linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.88) 100%), url(${heroImage})` }}

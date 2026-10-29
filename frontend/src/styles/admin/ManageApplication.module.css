@@ -1,4 +1,3 @@
-/* src/styles/admin/ManageApplication.module.css */
 .adminContainer {
   padding: 40px 20px;
   max-width: 1200px;
@@ -23,7 +22,6 @@
   letter-spacing: -0.5px;
 }
 
-/* Controls wrapper for sorting and filtering */
 .controlsWrapper {
   display: flex;
   gap: 15px;

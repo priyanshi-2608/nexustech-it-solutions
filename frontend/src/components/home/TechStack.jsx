@@ -1,4 +1,3 @@
-// src/components/home/TechStack.jsx
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/TechStack.module.css';
 import { getTechIcon } from '../../utils/iconMap';
@@ -33,12 +32,10 @@ const TechStack = () => {
     ? technologies 
     : technologies.filter(tech => tech.category === activeCategory);
 
-  // Split filtered tech into two rows for the dual-ticker effect (or duplicate if short)
   const midpoint = Math.ceil(filteredTech.length / 2);
   const row1Items = filteredTech.slice(0, midpoint);
   const row2Items = filteredTech.slice(midpoint);
 
-  // Fallback if few items exist
   const firstRow = row1Items.length > 0 ? row1Items : filteredTech;
   const secondRow = row2Items.length > 0 ? row2Items : filteredTech;
 
@@ -73,7 +70,6 @@ const TechStack = () => {
           {/* Row 1: Scrolls Left */}
           <div className={styles.marqueeRow}>
             <div className={styles.marqueeTrack}>
-              {/* Render items twice to create a seamless infinite loop loop */}
               {[...firstRow, ...firstRow, ...firstRow].map((tech, idx) => (
                 <div key={`r1-${tech._id}-${idx}`} className={styles.techCard}>
                   <div className={styles.techCardHeader}>

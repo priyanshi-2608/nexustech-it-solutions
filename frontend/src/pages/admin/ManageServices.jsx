@@ -2,23 +2,22 @@ import React, { useState, useEffect } from 'react';
 import * as LucideIcons from 'lucide-react';
 import styles from '../../styles/admin/ManageServices.module.css';
 
-// Helper component to render icons dynamically
 const DynamicIcon = ({ name, size = 20, className }) => {
-    const IconComponent = LucideIcons[name] || LucideIcons.HelpCircle;
-    return <IconComponent size={size} className={className} />;
+  const IconComponent = LucideIcons[name] || LucideIcons.HelpCircle;
+  return <IconComponent size={size} className={className} />;
 };
 
 const AVAILABLE_ICONS = [
-    { name: 'Code', label: 'Development & Coding' },
-    { name: 'Server', label: 'Cloud & Infrastructure' },
-    { name: 'Cpu', label: 'AI & Machine Learning' },
-    { name: 'Shield', label: 'Security & Safety' },
-    { name: 'Layout', label: 'Design & UI/UX' },
-    { name: 'Database', label: 'Data & Storage' },
-    { name: 'Globe', label: 'Real-Time / Global' },
-    { name: 'Smartphone', label: 'Mobile Apps' },
-    { name: 'Zap', label: 'Speed & Automation' },
-    { name: 'Settings', label: 'Configuration & Tools' }
+  { name: 'Code', label: 'Development & Coding' },
+  { name: 'Server', label: 'Cloud & Infrastructure' },
+  { name: 'Cpu', label: 'AI & Machine Learning' },
+  { name: 'Shield', label: 'Security & Safety' },
+  { name: 'Layout', label: 'Design & UI/UX' },
+  { name: 'Database', label: 'Data & Storage' },
+  { name: 'Globe', label: 'Real-Time / Global' },
+  { name: 'Smartphone', label: 'Mobile Apps' },
+  { name: 'Zap', label: 'Speed & Automation' },
+  { name: 'Settings', label: 'Configuration & Tools' }
 ];
 
 const ManageServices = () => {
@@ -146,46 +145,23 @@ const ManageServices = () => {
               />
             </div>
 
-            {/* Visual Icon Picker Grid for Non-IT Admins */}
+            {/* Visual Icon Picker Grid */}
             <div className={styles.inputGroup}>
               <label>Choose Service Symbol / Icon</label>
-              <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '8px' }}>
+              <p className={styles.pickerSubtext}>
                 Select the symbol that best represents this service category:
               </p>
-              <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', 
-                gap: '8px', 
-                maxHeight: '200px', 
-                overflowY: 'auto', 
-                padding: '4px',
-                border: '1px solid #e2e8f0',
-                borderRadius: '8px',
-                backgroundColor: '#f8fafc'
-              }}>
+              <div className={styles.iconGrid}>
                 {AVAILABLE_ICONS.map((item) => {
                   const isSelected = serviceForm.icon === item.name;
                   return (
                     <div 
                       key={item.name}
                       onClick={() => setServiceForm({...serviceForm, icon: item.name})}
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        padding: '10px 8px',
-                        backgroundColor: isSelected ? '#0066ff' : '#ffffff',
-                        color: isSelected ? '#ffffff' : '#334155',
-                        border: isSelected ? '2px solid #0066ff' : '1px solid #cbd5e1',
-                        borderRadius: '6px',
-                        cursor: 'pointer',
-                        transition: 'all 0.2s ease',
-                        textAlign: 'center'
-                      }}
+                      className={`${styles.iconOption} ${isSelected ? styles.selectedIconOption : ''}`}
                     >
                       <DynamicIcon name={item.name} size={22} className={styles.pickerIcon} />
-                      <span style={{ fontSize: '0.75rem', fontWeight: 500, marginTop: '6px', lineHeight: '1.1' }}>
+                      <span className={styles.iconLabel}>
                         {item.label}
                       </span>
                     </div>
@@ -230,7 +206,7 @@ const ManageServices = () => {
               services.map(s => (
                 <div key={s._id} className={styles.rowItem}>
                   <div className={styles.itemInfo}>
-                    <div className={styles.iconWrapper} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f1f5f9', padding: '10px', borderRadius: '8px', marginRight: '12px', minWidth: '44px' }}>
+                    <div className={styles.iconWrapper}>
                       <DynamicIcon name={s.icon} size={22} />
                     </div>
                     <div>

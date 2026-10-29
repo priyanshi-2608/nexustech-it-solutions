@@ -36,8 +36,6 @@ import ManageApplications from './pages/admin/ManageApplications';
 import ManageTechnologies from './pages/admin/ManageTechnologies';
 import ManageProjects from './pages/admin/ManageProjects';
 import AdminTestimonials from './pages/admin/AdminTestimonials';
-
-import './styles/variables.css';
 import './styles/global.css';
 
 function App() {

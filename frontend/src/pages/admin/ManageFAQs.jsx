@@ -7,7 +7,6 @@ const ManageFAQs = () => {
   const [error, setError] = useState('');
   const [message, setMessage] = useState({ text: '', type: '' });
   
-  // Form state for creating a new FAQ
   const [formData, setFormData] = useState({
     question: '',
     answer: '',
@@ -40,7 +39,6 @@ const ManageFAQs = () => {
     fetchFAQs();
   }, []);
 
-  // Auto-clear notification messages after 4 seconds
   useEffect(() => {
     if (message.text) {
       const timer = setTimeout(() => {
@@ -50,12 +48,10 @@ const ManageFAQs = () => {
     }
   }, [message]);
 
-  // Handle input changes for the form
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Submit new FAQ
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage({ text: '', type: '' });
@@ -75,7 +71,6 @@ const ManageFAQs = () => {
       if (!res.ok) throw new Error(data.error || 'Failed to create FAQ');
 
       setMessage({ text: 'FAQ published successfully!', type: 'success' });
-      // Reset form and reload list
       setFormData({ question: '', answer: '', category: 'General', order: 0 });
       fetchFAQs();
     } catch (err) {
@@ -84,7 +79,6 @@ const ManageFAQs = () => {
     }
   };
 
-  // Delete an FAQ
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this FAQ?')) return;
 

@@ -1,4 +1,3 @@
-/* src/styles/ManageServices.module.css */
 .managePage {
   max-width: 1100px;
   margin: 0 auto;
@@ -100,6 +99,56 @@
   height: 80px;
 }
 
+.pickerSubtext {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.iconGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 4px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+.iconOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  background-color: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.iconOption:hover {
+  border-color: #0066ff;
+}
+
+.selectedIconOption {
+  background-color: #0066ff;
+  color: #ffffff;
+  border: 2px solid #0066ff;
+}
+
+.iconLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 6px;
+  line-height: 1.1;
+}
+
 .submitBtn {
   background-color: #0066ff;
   color: #ffffff;
@@ -114,6 +163,11 @@
 
 .submitBtn:hover {
   background-color: #0052cc;
+}
+
+.submitBtn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
 }
 
 .tableList {
@@ -149,9 +203,16 @@
   overflow: hidden;
 }
 
-.itemIcon {
-  font-size: 1.75rem;
-  flex-shrink: 0;
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 12px;
+  min-width: 44px;
+  color: #0066ff;
 }
 
 .itemInfo strong {
@@ -176,6 +237,7 @@
   font-size: 0.85rem;
   cursor: pointer;
   flex-shrink: 0;
+  transition: background-color 0.2s;
 }
 
 .deleteBtn:hover {

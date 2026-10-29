@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
@@ -7,7 +6,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Add scroll listener to transform navbar background on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -82,7 +80,6 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        {/* Action Button (Now links directly to the full-page route) */}
         <div className={styles.actions}>
           <Link to="/contact" onClick={closeMenu} className={styles.contactBtn}>
             Contact Us

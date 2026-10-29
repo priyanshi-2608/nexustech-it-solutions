@@ -1,4 +1,3 @@
-// src/components/home/ServicesOverview.jsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ServiceIcon from '../../components/ServiceIcon';
@@ -38,7 +37,6 @@ const ServicesOverview = () => {
           <div className={styles.grid}>
             {services.map((service) => (
               <div key={service._id} className={styles.card}>
-                {/* Header row with Icon and Title side-by-side like the Services page */}
                 <div className={styles.cardHeader}>
                   <div className={styles.iconWrapper}>
                     <ServiceIcon iconName={service.icon} className={styles.lucideIcon} />

@@ -1,5 +1,3 @@
-/* src/styles/Team.module.css */
-
 .teamPage {
   background-color: var(--bg-main);
   color: var(--text-main);
@@ -7,7 +5,6 @@
   overflow-x: hidden;
 }
 
-/* Hero Section */
 .teamHero {
   position: relative;
   width: 100%;
@@ -76,7 +73,6 @@
   line-height: 1.6;
 }
 
-/* Grid Section */
 .gridSection {
   padding: 80px 20px 100px 20px;
   background: var(--bg-main);
@@ -84,13 +80,12 @@
 
 .teamGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Forces a strict 3-column layout */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* Make it responsive for smaller screens */
 @media (max-width: 900px) {
   .teamGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -103,7 +98,6 @@
   }
 }
 
-/* Glassmorphic Member Card */
 .memberCard {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -124,7 +118,6 @@
   background: rgba(21, 31, 50, 0.9);
 }
 
-/* Image Wrapper with Zoom Effect */
 .imageContainer {
   position: relative;
   width: 100%;
@@ -152,7 +145,6 @@
   background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
 }
 
-/* Info Section */
 .memberInfo {
   padding: 20px;
   display: flex;
@@ -190,7 +182,6 @@
   overflow: hidden;
 }
 
-/* Card Actions Row (Read More + LinkedIn Button) */
 .cardActions {
   display: flex;
   align-items: center;
@@ -242,7 +233,6 @@
   height: 13px;
 }
 
-/* Pagination Styles */
 .paginationContainer {
   display: flex;
   align-items: center;
@@ -396,7 +386,6 @@
   background-color: #084e96;
 }
 
-/* Status & Error Messages */
 .statusMessage, .errorMessage {
   text-align: center;
   font-size: 1.1rem;

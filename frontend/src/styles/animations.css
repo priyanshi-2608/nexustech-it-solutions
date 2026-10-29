@@ -1,5 +1,3 @@
-/* src/styles/animations.css */
-
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(40px);

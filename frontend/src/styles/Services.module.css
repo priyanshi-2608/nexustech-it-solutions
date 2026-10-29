@@ -1,5 +1,3 @@
-/* src/styles/Services.module.css */
-
 .servicesPage {
   background-color: var(--bg-main);
   color: var(--text-main);
@@ -15,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 180px 20px 80px 20px; /* Clears fixed navbar */
+  padding: 180px 20px 80px 20px;
   text-align: center;
   overflow: hidden;
   background: radial-gradient(circle at center, var(--primary-light) 0%, var(--bg-main) 70%);
@@ -76,7 +74,6 @@
   line-height: 1.6;
 }
 
-/* Grid Section */
 .gridSection {
   padding: 100px 20px 120px 20px;
   background: var(--bg-main);
@@ -90,7 +87,6 @@
   margin: 0 auto;
 }
 
-/* Frosted Glass Service Card */
 .serviceCard {
   background: var(--bg-card);
   backdrop-filter: blur(12px);
@@ -185,7 +181,6 @@
   flex-shrink: 0;
 }
 
-/* --- Modal Styles --- */
 .modalOverlay {
   position: fixed;
   top: 0;

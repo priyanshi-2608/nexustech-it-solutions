@@ -1,4 +1,3 @@
-// src/utils/iconMap.js
 import React from 'react';
 import { 
   Atom, 
@@ -18,7 +17,6 @@ import {
   HardDrive
 } from 'lucide-react';
 
-// Map database string keys to actual Lucide components
 const iconMap = {
   // Frontend
   react: <Atom size={24} />,

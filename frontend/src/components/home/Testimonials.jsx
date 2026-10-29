@@ -1,4 +1,3 @@
-// src/components/home/Testimonials.jsx
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import styles from '../../styles/Testimonials.module.css';
@@ -9,7 +8,6 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
-  // How many testimonials to display per slide view
   const itemsPerPage = 3;
 
   useEffect(() => {
@@ -33,10 +31,7 @@ const Testimonials = () => {
     fetchTestimonials();
   }, []);
 
-  // Calculate total pages/dots needed
   const totalPages = Math.ceil(testimonials.length / itemsPerPage);
-
-  // Automatic slide cycle every 5 seconds (pauses when user hovers)
   useEffect(() => {
     if (totalPages <= 1 || isPaused) return;
 
@@ -71,7 +66,6 @@ const Testimonials = () => {
     return null;
   }
 
-  // Get current slice of testimonials for the active page
   const visibleTestimonials = testimonials.slice(
     currentIndex * itemsPerPage,
     currentIndex * itemsPerPage + itemsPerPage
