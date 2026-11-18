@@ -1,6 +1,6 @@
 # NexusTech – IT Solutions & ATS Recruitment Platform
 
-TechNova is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application designed for an IT solutions provider. It features a complete corporate website experience alongside a robust Admin Portal and an automated Applicant Tracking System (ATS) resume matcher.
+NexusTech is a full-stack MERN (MongoDB, Express.js, React, Node.js) web application designed for an IT solutions provider. It features a complete corporate website experience alongside a robust Admin Portal and an automated Applicant Tracking System (ATS) resume matcher.
 
 ## Key Features
 
